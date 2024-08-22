@@ -1,0 +1,89 @@
+/* App.css */
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.App:hover {
+  transform: translateY(-5px);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 2px solid #d1d1d1;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #6e8efb;
+}
+
+button {
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #a777e3, #6e8efb);
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* Add smooth animation when loading */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.App {
+  animation: fadeIn 0.6s ease-in-out;
+}
